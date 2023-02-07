@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: letraCatar;
+  src: url(../Qatar2022-Medium.otf);
+  font-family: letraTituloCatar;
+  src: url(../Qatar2022-Bold.otf);
+  /*  font-family: letraCatari;
+  src: url(../Qatar2022Arabic-Bold.otf); */
+}
+
+.color-text {
+  color: white;
+}
+body {
+  background-color: #8d1c3d;
+  color: white;
+}
+
+a {
+  font-family: letraTituloCatar;
+}
+h1 {
+  font-family: letraTituloCatar;
+}
+
+p {
+  font-family: letraTituloCatar;
+}
+
+/* Parte Principal */
+#partePrincipal {
+  min-height: 70vh;
+  background-image: linear-gradient(
+      rgba(10, 10, 10, 0.705),
+      rgba(53, 55, 59, 0.616)
+    ),
+    url(../images/argentina-con-copa.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+.qatar2022 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 70vh;
+}
+
+/* Footer */
+footer {
+  background-color: #eeeee4;
+  color: #8d1c3d;
+}
+
+.link-pagina {
+  color: darkmagenta;
+  text-decoration: none;
+}
+.link-pagina:hover {
+  color: black;
+}
+
+@media (min-width: 1024px) {
+  .video-partido {
+    width: 560px;
+    height: 315px;
+  }
+}
