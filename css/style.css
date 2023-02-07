@@ -9,10 +9,11 @@
   src: url(../Qatar2022-Medium.otf);
   font-family: letraTituloCatar;
   src: url(../Qatar2022-Bold.otf);
-  /*  font-family: letraCatari;
-  src: url(../Qatar2022Arabic-Bold.otf); */
 }
-
+@font-face {
+  font-family: letraCatari;
+  src: url(../Qatar2022-Heavy.otf);
+}
 .color-text {
   color: white;
 }
@@ -32,6 +33,9 @@ p {
   font-family: letraTituloCatar;
 }
 
+h2 {
+  font-family: letraCatari;
+}
 /* Parte Principal */
 #partePrincipal {
   min-height: 70vh;
@@ -39,7 +43,7 @@ p {
       rgba(10, 10, 10, 0.705),
       rgba(53, 55, 59, 0.616)
     ),
-    url(../images/argentina-con-copa.jpg);
+    url(../images/argentina-con-copa.webp);
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
@@ -49,7 +53,18 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 70vh;
+  min-height: 20vh;
+}
+
+/* PARTIDOS */
+
+.texto-partidos {
+  padding-top: 15px;
+}
+
+.final {
+  color: gold;
+  font-size: 22px;
 }
 
 /* Footer */
@@ -66,7 +81,109 @@ footer {
   color: black;
 }
 
+/* animacion texto */
+
+@-webkit-keyframes bounceInDown {
+  from,
+  60%,
+  75%,
+  90%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -3000px, 0);
+    transform: translate3d(0, -3000px, 0);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 25px, 0);
+    transform: translate3d(0, 25px, 0);
+  }
+
+  75% {
+    -webkit-transform: translate3d(0, -10px, 0);
+    transform: translate3d(0, -10px, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(0, 5px, 0);
+    transform: translate3d(0, 5px, 0);
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes bounceInDown {
+  from,
+  60%,
+  75%,
+  90%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -3000px, 0);
+    transform: translate3d(0, -3000px, 0);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 25px, 0);
+    transform: translate3d(0, 25px, 0);
+  }
+
+  75% {
+    -webkit-transform: translate3d(0, -10px, 0);
+    transform: translate3d(0, -10px, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(0, 5px, 0);
+    transform: translate3d(0, 5px, 0);
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.bounceInDown {
+  -webkit-animation-name: bounceInDown;
+  animation-name: bounceInDown;
+}
+
+.animated {
+  -webkit-animation-duration: 4s;
+  animation-duration: 4s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
 @media (min-width: 1024px) {
+  /* navbar */
+  .navegacion {
+    padding-right: 110px;
+  }
+
+  /* Partidos */
+
+  .partidos-img {
+    width: 560px;
+    height: 315px;
+  }
+
   .video-partido {
     width: 560px;
     height: 315px;
