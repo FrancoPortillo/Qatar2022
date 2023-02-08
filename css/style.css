@@ -67,6 +67,11 @@ h2 {
   font-size: 22px;
 }
 
+.video-partido {
+  width: 100%;
+  height: 220px;
+}
+
 /* Footer */
 footer {
   background-color: #eeeee4;
@@ -171,6 +176,25 @@ footer {
   animation-fill-mode: both;
 }
 
+/* vista */
+
+@media (min-width: 500px) {
+  /* Partidos */
+
+  .video-partido {
+    width: 400px;
+    height: 300px;
+  }
+}
+
+@media (min-width: 650px) {
+  .video-partido {
+    width: 560px;
+    height: 315px;
+  }
+}
+/* Vista desktop */
+
 @media (min-width: 1024px) {
   /* navbar */
   .navegacion {
@@ -179,13 +203,35 @@ footer {
 
   /* Partidos */
 
-  .partidos-img {
-    width: 560px;
-    height: 315px;
+  .video-partido {
+    width: 700px;
+    height: 365px;
   }
 
-  .video-partido {
-    width: 560px;
-    height: 315px;
+  /* mejores jugadores */
+  .carrusel-jugadores {
+    display: flex;
+    width: 600px;
+    height: 430px;
+    margin-left: 660px;
+  }
+  .carrusel-jugadores img {
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: 0.8;
+    transition: 0.4s ease;
+  }
+
+  .carrusel-jugadores img:hover {
+    width: 250px;
+    opacity: 1;
+    filter: contrast(120%);
+  }
+
+  /* footer */
+
+  footer {
+    margin-top: 14px;
   }
 }
