@@ -38,6 +38,10 @@ p {
 h2 {
   font-family: letraCatari;
 }
+
+h3 {
+  font-family: letraTituloCatar;
+}
 /* Parte Principal */
 #partePrincipal {
   min-height: 70vh;
@@ -60,6 +64,9 @@ h2 {
 }
 
 /* PARTIDOS */
+.titulo-part-arg {
+  margin-top: 15px;
+}
 
 /* Footer */
 footer {
@@ -71,19 +78,26 @@ footer {
 }
 
 .link-pagina {
-  color: rgb(36, 224, 18);
+  color: black;
   text-decoration: none;
 }
 .link-pagina:hover {
   color: rgb(230, 63, 63);
 }
 
+@media (max-width: 1023px) {
+  .img-celu {
+    width: 358px;
+    height: 358px;
+    margin-top: 10px;
+  }
+}
 /* Vista desktop */
 
 @media (min-width: 1024px) {
   /* navbar */
   .navegacion {
-    padding-right: 110px;
+    padding-right: 90px;
   }
 
   /* Partidos */
