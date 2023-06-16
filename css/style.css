@@ -101,7 +101,11 @@ footer {
   }
 
   /* Partidos */
-
+  .video {
+    width: 560px;
+    height: 315px;
+    margin: 0 auto;
+  }
   /* mejores jugadores */
   .carrusel-jugadores {
     display: flex;
